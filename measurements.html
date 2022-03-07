@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatible-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+    <!-- Title -->
+    <title>Health Track</title>
+    <!-- Title Icon -->
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" id="logo" href="index.html">
+                    <img src="images/logo2.png" alt="Health Track logo" width="36" height="36"
+                        class="d-inline-block align-text-center">
+                    HEALTH TRACK
+                </a>
+                <!-- Logo end -->
+                <!-- Small screen dropdown -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Small screen dropdown end-->
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exercises.html">Exercises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nutrition.html">Nutrition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="measurements.html">Measurements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="goals.html">Goals</a>
+                        </li>
+                    </ul>
+                    <!-- User -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/user4.jpg" alt="Profile Photo" width="46" height="40" lass="rounded-circle">
+                            <strong class="p-2 dropdown-toggle">Professor Girafales</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <!-- User end-->
+                </div>
+                <!-- Nav items end-->
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar end-->
+
+    <main class="container-fluid">
+        
+        <!-- Weight and Height -->
+        <div class="row col-12 col-md-10 m-auto mt-4 mt-md-5 mb-2"">
+            <div class="column">   
+                <h3>Height and Weight
+                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-warning">edit</i></button>
+                </h3>
+            </div>
+        </div>
+        <div class="row col-12 col-md-10 m-auto">
+            <div class="column col-4 fs-5">Height(m)</div>
+            <div class="column col-4 fs-5">Weight(kg)</div>
+            <div class="column col-4 fs-5">BMI</div>
+        </div>
+        <div class="row col-12 col-md-10 m-auto">
+            <strong class="column col-4 fs-3">1.83</strong>
+            <strong class="column col-4 fs-3">81.00</strong>
+            <strong class="column col-4 fs-3">24.19</strong>
+        </div>
+        <!-- Weight and Height end -->
+
+        <!-- Body mass index table-->
+        <div class="row col-12 col-md-10 m-auto mt-3">
+            <div class="column">
+                <table class="table table-responsive table-striped table-bordered">
+                    <tbody>
+                        <h5>Body Mass Index</h5>
+                        <tr>
+                            <th>Very underweight</th>
+                            <th class="text-danger">&lt; 17</th>
+                        </tr>
+                        <tr>
+                            <th>Underweight</th>
+                            <th class="text-warning">17.1 to 18.49</th>
+                        </tr>
+                        <tr>
+                            <th>Normal</th>
+                            <th class="text-success">18.6 to 24.99</th>
+                        </tr>
+                        <tr>
+                            <th>Overweight</th>
+                            <th class="text-warning">25.1 to 29.99</th>
+                        </tr>
+                        <tr>
+                            <th>Obesitity I</th>
+                            <th class="text-warning">30.1 to 34.99</th>
+                        </tr>
+                        <tr>
+                            <th>Obesity II (Severe)</th>
+                            <th class="text-danger">35,1 to 39,99</th>
+                        </tr>
+                        <tr>
+                            <th>Obesity III (Morbid)</th>
+                            <th class="text-danger">&gt; 40</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Body mass index table end-->
+        
+
+        <!-- Circumferences -->
+        <div class="row col-12 col-md-10 m-auto mt-5 mb-5">
+            <div class="column">
+                <h3>Circumferences
+                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-warning">edit</i></button>
+                </h3>
+                <table class="table table-responsive table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Body part</th>
+                            <th>Current month</th>
+                            <th>Last month</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Torax</td>
+                            <td>91,50</td>
+                            <td>91,30</td>
+                        </tr>
+                        <tr>
+                            <td>Contracted right arm</td>
+                            <td>34,50</td>
+                            <td>34,38</td>
+                        </tr>
+                        <tr>
+                            <td>Contracted left arm</td>
+                            <td>34,50</td>
+                            <td>34,38</td>
+                        </tr>
+                        <tr>
+                            <td>Hip</td>
+                            <td>98,00</td>
+                            <td>98,00</td>
+                        </tr>
+                        <tr>
+                            <td>Relaxed right arm</td>
+                            <td>32,00</td>
+                            <td>31,90</td>
+                        </tr>
+                        <tr>
+                            <td>Relaxes left arm</td>
+                            <td>32,00</td>
+                            <td>31,90</td>
+                        </tr>
+                        <tr>
+                            <td>Abdomen</td>
+                            <td>85,00</td>
+                            <td>85,00</td>
+                        </tr>
+                        <tr>
+                            <td>Waist</td>
+                            <td>93,50</td>
+                            <td>94,00</td>
+                        </tr>
+                        <tr>
+                            <td>Right forearm</td>
+                            <td>27,00</td>
+                            <td>27,00</td>
+                        </tr>
+                        <tr>
+                            <td>Left forearm</td>
+                            <td>27,00</td>
+                            <td>27,00</td>
+                        </tr>
+                        <tr>
+                            <td>Right thigh</td>
+                            <td>56,50</td>
+                            <td>56,30</td>
+                        </tr>
+                        <tr>
+                            <td>Left thigh</td>
+                            <td>56,50</td>
+                            <td>56,30</td>
+                        </tr>
+                        <tr>
+                            <td>Right calf</td>
+                            <td>36,00</td>
+                            <td>36,00</td>
+                        </tr>
+                        <tr>
+                            <td>Left calf</td>
+                            <td>36,50</td>
+                            <td>36,50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Circumferences end -->
+    </main>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

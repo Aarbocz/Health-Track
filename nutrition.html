@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- IE Compatible-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
+    <!-- Title -->
+    <title>Health Track</title>
+    <!-- Title Icon -->
+    <link rel="icon" href="images/icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" id="logo" href="index.html">
+                    <img src="images/logo2.png" alt="Health Track logo" width="36" height="36"
+                        class="d-inline-block align-text-center">
+                    HEALTH TRACK
+                </a>
+                <!-- Logo end -->
+                <!-- Small screen dropdown -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Small screen dropdown end-->
+                <!-- Nav Items -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="exercises.html">Exercises</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="nutrition.html">Nutrition</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="measurements.html">Measurements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="goals.html">Goals</a>
+                        </li>
+                    </ul>
+                    <!-- User -->
+                    <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="images/user4.jpg" alt="Profile Photo" width="46" height="40" class="rounded-circle">
+                            <strong class="p-2 dropdown-toggle">Professor Girafales</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow">
+                            <li><a class="dropdown-item" href="settings.html">Settings</a></li>
+                            <li><a class="dropdown-item" href="signin.html">Sign out</a></li>
+                        </ul>
+                    </div>
+                    <!-- User end-->
+                </div>
+                <!-- Nav items end-->
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar end-->
+
+    <main class="col-sm-6 col-md-9 mx-auto my-5">
+        
+        <!-- Add food -->
+        <div class="row col-12 my-5 ms-1">
+            <h3>Add Food</h3>
+            <form class="column input-group">
+                <input type="text" list="food" placeholder="Food" class="form-control" />
+                <datalist id="food">
+                    <option>Banana</option>
+                    <option>Apple</option>
+                    <option>Rice</option>
+                    <option>Salad</option>
+                    <option>Chips</option>
+                </datalist>
+                <input type="number" placeholder="Calories" class="form-control">
+                <input type="date" class="form-control">
+                <button href="index.html" class="btn btn-warning btn-sm px-4 col-md-2 text-center">Add</button>
+            </form>
+        </div>
+        <!-- Add food end -->
+
+        <!-- Table today -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <h2 class="ms-1">Today</h2>
+                <thead> 
+                    <tr>
+                        <th scope="col" class="col-6">Food</th>
+                        <th scope="col" class="col-5">Calories</th>
+                        <th scope="col" class="col-1">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2 bananas</td>
+                        <td>25</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>toast with butter</td>
+                        <td>124</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>rice, beans, salad, meat</td>
+                        <td>526</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>shake</td>
+                        <td>65</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>pasta with salad</td>
+                        <td>245</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>chocolate milk</td>
+                        <td>54</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn p-0 ms-1"><i class="material-icons text-danger">delete</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot class="bg-success fw-bold">
+                    <td>Total</td>
+                    <td colspan="2">1502</td>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Table today end -->
+
+        <!-- Table Week -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <h2 class="mt-4 ms-1">Week</h2>
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-6">Day</th>
+                        <th scope="col" class="col-5">Calories</th>
+                        <th scope="col" class="col-1">Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>1500</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>1224</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>2015</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>1025</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>2100</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>1240</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>545</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot class="bg-danger fw-bold">
+                    <td>Total</td>
+                    <td colspan="2">15502</td>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Table week end -->
+
+        <!-- Table month -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <h2 class="mt-4 ms-1">Month</h2>
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-6">Week</th>
+                        <th scope="col" class="col-5">Calories</th>
+                        <th scope="col" class="col-1">Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>6024</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Week 2</td>
+                        <td>5821</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Week 3</td>
+                        <td>6201</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Week 4</td>
+                        <td>6124</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Week 5</td>
+                        <td>5740</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot class="bg-danger fw-bold">
+                    <td>Total</td>
+                    <td colspan="2">42668</td>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Table month end -->
+
+        <!-- Table year -->
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <h2 class="mt-4 ms-1">Year</h2>
+                <thead>
+                    <tr>
+                        <th scope="col" class="col-6">Day</th>
+                        <th scope="col" class="col-5">Calories</th>
+                        <th scope="col" class="col-1">Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>January</td>
+                        <td>60254</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>58201</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>March</td>
+                        <td>65201</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                        <td>61024</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                        <td>57840</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>June</td>
+                        <td>68501</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                        <td>59214</td>
+                        <td>
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <button type="button" class="btn p-0"><i
+                                            class="material-icons text-warning">edit</i></button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+        
+                </tbody>
+                <tfoot class="bg-success fw-bold">
+                    <td>Total</td>
+                    <td colspan="2">425668</td>
+                </tfoot>
+            </table>
+        </div>
+        <!-- Table year end -->
+    </main>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

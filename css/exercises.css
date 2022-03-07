@@ -1,0 +1,38 @@
+.chart-container {
+  width: 70%;
+  margin: 15px auto;
+}
+
+.chart-container h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.card img {
+  height: 300px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10px;
+  text-align: right;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 3%;
+}

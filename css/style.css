@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+#logo {
+  font-family: fantasy;
+}
+
+#jumbotron {
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 75%;
+}
